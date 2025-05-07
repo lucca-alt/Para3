@@ -31,7 +31,7 @@ main = do
     let classifiedList = classifyTemp avgTempList
     let filterHot = ownFilter (== "hot") classifiedList 
 
-    if length filterHot >= (length avgTempList) `div` 2 
+    if length filterHot > (length avgTempList) `div` 2 
         then print "Heatwave!"
         else print "No heat wave :)"
 
