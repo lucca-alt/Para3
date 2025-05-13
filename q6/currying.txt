@@ -1,0 +1,15 @@
+a) Currying is about turning a function, that has multiple arguments into a series of functions that take
+a single argument until there is only a return value left.
+Yes, it is possible to create a curried version of any function. In fact, when executing a function,
+haskell creates a curried version of it by default. 
+The benefits of currying are: simplicity, modularity and reusability. Currying makes it easier to partially
+apply functions and reuse logic of functions.
+
+b) foo = \x -> (\y -> x * y)
+This function takes an x value, returns a function that takes a y value. That inner function which takes the y value
+then returns the result of x * y. 
+
+c) foo :: Bool -> Int -> Int -> Int
+    foo = \x -> \y -> \z -> 
+        if x then y + z
+        else y * z 

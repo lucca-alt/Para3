@@ -1,0 +1,2 @@
+c) It reminds us of lazy evaluation. The way that the professor only submits the grades when asked is like in 
+lazy evaluation when the value is only computed when needed or asked for.
