@@ -29,4 +29,4 @@ inverseTable = [0, 4, 3, 2, 1, 5, 6, 7, 8, 9]
 
 checkDigits :: [Int] -> Bool
 checkDigits digits
-    
+-- did not understand task, reasearched and also used chatgpt but couldnt get an understanding

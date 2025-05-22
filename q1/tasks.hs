@@ -23,8 +23,8 @@ checkCoprime x y
     | gcd x y == 1 = True -- if gcd is 1 then the two numbers are coprime
     | otherwise = False
 
-multOf6and10 :: Int -> [Int]
-multOf6and10 n = [x | x <- [1..n], mod x 6 == 0 || mod x 10 == 0]
+multOf6or11 :: Int -> [Int]
+multOf6or11 n = [x | x <- [1..n], mod x 6 == 0 || mod x 11 == 0]
 
 main :: IO()
 main = do 
@@ -33,4 +33,4 @@ main = do
     print (replaceChars "Hihaho")
     print (generatePrime 20)
     print (checkCoprime 4 8)
-    print (multOf6and10 999)
+    print (multOf6or11 999)
